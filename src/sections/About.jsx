@@ -34,9 +34,9 @@ export const About = () => {
                             <span className="text-secondary-foreground text-sm font-medium tracking-wider uppercase">About Us</span>
                         </div>
 
-                        <h2 className="text-4xl md:text-5xl font-bold leading-tight animate-fade-in animation-delay-100 text-secondary-foreground">
+                        <h2 className="text-4xl md:text-5xl font-bold leading-tight animate-fade-in animation-delay-100 text-white">
                             Bringing the essence of soul
-                            <span className="font-serif italic font-normal text-white"> to every solution.</span>
+                            <span className="font-serif pl-1 italic font-normal text-secondary-foreground"> to every solution.</span>
                         </h2>
                         <div className="space-y-4 text-muted-foreground animate-fade-in animation-delay-200">
                             <p>

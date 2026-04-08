@@ -54,7 +54,7 @@ export const Hero = () => {
                             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight animate-fade-in animation-delay-100">
                                 Web presence strategy
                                 <br />
-                                for <span className="font-monospaced font-normal text-primary italic glow-text">your company</span>
+                                for <span className="font-monospaced font-bold text-primary italic glow-text">your company</span>
                             </h1>
                             <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
                                We excel in customized IT solutions that cater to your business needs, offering 
