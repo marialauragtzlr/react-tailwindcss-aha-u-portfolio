@@ -1,5 +1,5 @@
 import { ArrowUpRight } from "lucide-react";
-import { AnimatedBorderButton } from "@/components/AnimatedBorderButton"
+import { Button } from "@/components/Button"
 
 const projects = [
     {
@@ -23,7 +23,27 @@ const projects = [
         tags: ["React", "Typescript", "NodeJS"],
         link: "https://1plusacademy.com/",
     },
-
+    {
+        title: "Sofia Beauty Studio",
+        description: "A beauty studio website showcasing professional services such as skincare, facials, and cosmetic treatments, with an elegant interface for clients to explore offerings, view results, and book appointments online.",
+        image: "/projects/sbs.png",
+        tags: ["React", "Typescript", "NodeJS"],
+        link: "https://sofiabeautystudio.com/",
+    },
+    {
+        title: "CAARC",
+        description: "A beauty studio website showcasing professional services such as skincare, facials, and cosmetic treatments, with an elegant interface for clients to explore offerings, view results, and book appointments online.",
+        image: "/projects/caarc.png",
+        tags: ["React", "Typescript", "NodeJS"],
+        link: "https://caarc.org/",
+    },
+    {
+        title: "ICAEA",
+        description: "A beauty studio website showcasing professional services such as skincare, facials, and cosmetic treatments, with an elegant interface for clients to explore offerings, view results, and book appointments online.",
+        image: "/projects/ICAEA.png",
+        tags: ["React", "Typescript", "NodeJS"],
+        link: "https://icaeaus.org/",
+    },
 ]
 
 export const Projects = () => {
@@ -46,7 +66,7 @@ export const Projects = () => {
                 </div>
 
                 {/* Projects grid */}
-                <div className="grid md:grid-cols-2 gap-8">
+                <div className="grid sm:grid-cols-2 md:grid-cols-3 md:grid-rows-2 gap-8">
                     {projects.map((project, index) => (
                         <div 
                             key={index} 
@@ -71,7 +91,7 @@ export const Projects = () => {
                                     <h3 className="text-xl font-semibold group-hover:text-primary transition-colors">{project.title}</h3>
                                     <ArrowUpRight className="w-5 h-5 text-muted-foreground group-hover:text-primary group-hover:translate-x-1 group-hover:-translate-y-1 transition-all"/>
                                 </div>
-                                <p className="text-muted-foreground text-sm">{project.description}</p>
+                                {/*<p className="text-muted-foreground text-sm">{project.description}</p>*/}
                                 <div className="flex flex-wrap gap-2">
                                     {project.tags.map((tag, tagIndex) => (
                                         <span key={tagIndex} className="px-4 py-1.5 rounded-full bg-surface text-xs font-medium border border-border/50 text-muted-foreground hover:border-primary/50 hover:text-primary transition-all duration-300">{tag}</span>
@@ -83,10 +103,10 @@ export const Projects = () => {
                 </div>
                 {/* View All CTA*/}
                 <div className="text-center mt-12 animate-fade-in animation-delay-500">
-                    <AnimatedBorderButton>
+                    <Button className="border border-muted-foreground bg-transparent text-foreground shadow-none hover:bg-white/10 focus-visible:ring-0 transition-all duration-300">
                         View All Projects
                         <ArrowUpRight className="w-5 h-5"/>
-                    </AnimatedBorderButton>
+                    </Button>
                 </div>
                 
             </div>

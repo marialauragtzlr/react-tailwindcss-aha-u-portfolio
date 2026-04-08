@@ -3,16 +3,13 @@ import { ArrowRight, Github, Linkedin, Twitter, ChevronDown, Download } from "lu
 import { AnimatedBorderButton } from "../components/AnimatedBorderButton"
 
 const technologies = [
-  "JavaScript (ES6+)",
+  "Java",
+  "Tailwind CSS",
   "TypeScript",
   "React",
   "Node.js",
-  "Next.js",
-  "Python",
-  "PostgreSQL",
-  "MongoDB",
-  "AWS",
-  "Docker"
+  "CMS",
+  "Jotform",
 ];
 
 export const Hero = () => {
@@ -68,27 +65,9 @@ export const Hero = () => {
 
                         {/*CTAs*/}
                         <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300">
-                            <Button size={"lg"}>
+                            <Button onClick={() => {window.location.href="#contact"}} size="lg">
                                 Contact Us <ArrowRight className="w-5 h-5"/>
                             </Button>
-                            <AnimatedBorderButton>
-                                <Download className="w-5 h-5"/> 
-                                Download CV
-                            </AnimatedBorderButton>
-                        </div>
-
-                        {/*Social Links*/}
-                        <div className="flex items-center gap-4 animate-fade-in animation-delay-400">
-                            <span className="text-sm text-muted-foreground">Follow us: </span>
-                            {[
-                                { icon: Github, href: "#" },
-                                { icon: Linkedin, href: "#" },
-                                { icon: Twitter, href: "#" },
-                            ].map((social, index) => (
-                                <a key={index} href={social.href} className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300">
-                                    {<social.icon className="w-5 h-5"/>}
-                                </a>
-                            ))}
                         </div>
                     </div>
 

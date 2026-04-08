@@ -43,9 +43,18 @@ export const Navbar = () => {
 
 
                 {/*CTA Button*/}
-                <div className="hidden md:block">
-                    <Button size="sm">Contact Us</Button>
+                <div className="flex gap-7">
+                    <div className="hidden md:block">
+                        <Button onClick={() => {window.location.href="#contact"}} size="sm">Contact Us</Button>
+                    </div>
+
+                    <div className="hidden md:block">
+                        <Button size="sm"  className="border border-muted-foreground bg-transparent text-foreground shadow-none hover:bg-white/10 focus-visible:ring-0 transition-all duration-300" onClick={() => {setsMobileMenuOpen(false); window.open("https://online.aha-u.com/", "_blank")}}>
+                                Domains & Hosting
+                            </Button>
+                    </div>
                 </div>
+                
 
                 {/*Mobile Menu Button */}
                 <button className="md:hidden p-2 text-foreground cursor-pointer" onClick={() => setsMobileMenuOpen((prev) => !prev)}>
@@ -64,9 +73,16 @@ export const Navbar = () => {
                                 {link.label}
                             </a>
                         ))}
-                        <Button onClick={() => setsMobileMenuOpen(false)}>
-                            Contact Us
-                        </Button>
+                        <div className="flex flex-col gap-2">
+                            <Button onClick={() => {setsMobileMenuOpen(false); window.location.href = "#contact"}}>
+                                Contact Us
+                            </Button>
+                            <Button className="border border-muted-foreground bg-transparent text-foreground shadow-none hover:bg-white/10 focus-visible:ring-0" onClick={() => {setsMobileMenuOpen(false); window.open("https://online.aha-u.com/", "_blank")}}>
+                                Domains & Hosting
+                            </Button>
+                            
+                        </div>
+                        
                     </div>
                 </div>
             )}
