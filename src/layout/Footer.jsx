@@ -1,8 +1,3 @@
-const socialLinks = [
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
-    { icon: X, href: "#", label: "X" },
-]
-
 const footerLinks = [
     { href: "#about", label: "About" },
     { href: "#projects", label: "Projects" },
