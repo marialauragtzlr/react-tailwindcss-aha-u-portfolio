@@ -11,4 +11,11 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  "redirects": [
+    {
+      "source": "/domains",
+      "destination": "https://www.secureserver.net?pl_id=592577",
+      "permanent": false
+    }
+  ]
 })
