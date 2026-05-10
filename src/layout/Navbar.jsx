@@ -76,7 +76,7 @@ export const Navbar = () => {
                             <Button onClick={() => {setsMobileMenuOpen(false); window.location.href = "#contact"}}>
                                 Contact Us
                             </Button>
-                            <Button className="border border-muted-foreground bg-transparent text-foreground shadow-none hover:bg-white/10 focus-visible:ring-0" onClick={() => {setsMobileMenuOpen(false); window.open("https://online.aha-u.com/", "_blank")}}>
+                            <Button className="border border-muted-foreground bg-transparent text-foreground shadow-none hover:bg-white/10 focus-visible:ring-0" onClick={() => {setsMobileMenuOpen(false); window.open("https://www.secureserver.net?pl_id=592577", "_blank")}}>
                                 Domains & Hosting
                             </Button>
                             
