@@ -160,8 +160,7 @@ export const Contact = () => {
                                 <span className="font-medium">Currently Available</span>
                             </div>
                             <p className="text-muted-foreground text-sm">
-                                We're currently open to new opportunities and exciting projects.Whether you need a full-time engineer or a freelance consultant,
-                                send us a message!
+                                Whether you’re launching a new project, expanding your business online, or looking for innovative digital solutions, our team is ready to help bring your ideas to life. Send us a message and let’s create something great together!
                             </p>
                         </div>
                     </div>
